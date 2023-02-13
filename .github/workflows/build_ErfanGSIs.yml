@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://rq5js8rncurpfn2tglu6blm1femmkfkk2j889sh2m2qnihhkjkofvpsn.qc.dolfincdnx.net:10443/xdispatch716536947d488d3b/bigota.d.miui.com/V13.0.4.0.SCVCNXM/miui_EARTH_V13.0.4.0.SCVCNXM_de102f96ee_12.0.zip?bsreqid=9fc0612b0cd1b6950c6867db5b574010&coldbiz=1
-  ROM_NAME: MIUI
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16/8.1.5.1/cn/20210826144309/44eca339/update.zip
+  ROM_NAME: Flyme
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
 
@@ -61,7 +61,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
+              ./transfer gof final/GSI.zip
 
          
             
